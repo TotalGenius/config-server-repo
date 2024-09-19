@@ -4,3 +4,5 @@ spring:
     consumer:
       group-id: lidar-processing-group
       auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
